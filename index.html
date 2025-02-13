@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwin-->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+
+    <!-- fontasome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+<body class="bg-black">
+
+<!--navbar -->
+
+<div class="heder m-auto w-5/6 font-mono ">
+
+        <nav class=" bg-green-500 fixed  top-0 left-0 w-full p-2 z-50 p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="text-white text-4xl font-bold ">MyLogo</a>
+    
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden text-white text-2xl">
+                    ☰
+                </button>
+    
+                <!-- Menu Items -->
+                <ul id="menu" class="hidden md:flex space-x-6 text-white text-xl">
+
+                    <li><a class=" group border-b-2 border-transparent hover:border-red-500 transition p-2 text-white " href="" >HOME</a></li>
+
+                    <li><a class="border-b-2 border-transparent hover:border-red-500 transition p-2 text-white active" href="">SKILLS</a></li>
+
+                    <li><a class="border-b-2 border-transparent hover:border-red-500 transition p-2 text-white active" href="">EDUCATION</a></li>
+
+                    <li><a class="border-b-2 border-transparent hover:border-red-500 transition p-2 text-white active" href="">SERVICES</a></li>
+
+                    <li><a class="border-b-2 border-transparent hover:border-red-500 transition p-2 text-white active" href="">EXPERIENCE</a></li>
+
+                    <li><a class="border-b-2 border-transparent hover:border-red-500 transition p-2 text-white active" href="">CONTACT</a></li>
+                </ul>
+            </div>
+    
+            <!-- Mobile Menu (Initially Hidden) -->
+            <ul id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 bg-black p-4 text-white">
+                <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#" class="hover:text-gray-300">About</a></li>
+                <li><a href="#" class="hover:text-gray-300">Services</a></li>
+                <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <script>
+            // Mobile Menu Toggle
+            document.getElementById("menu-btn").addEventListener("click", function() {
+                document.getElementById("mobile-menu").classList.toggle("hidden");
+            });
+        </script>
+
+</div>
+
+
+<!--navbar end-->
+
+
+    <!--hero -->
+
+
+<div class="heder m-auto w-5/6 font-mono ">
+
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5 mt-20">
+
+            <div>
+                <img src="./img/21004063.jpg" class="w-150 h-120 rounded-full object-cover" alt="">
+            </div>
+            <div class="mt-22 p-4 text-white flex flex-col gap-4">
+
+                <h1 class="font-bold text-5xl">Hi,It's <span class="text-red-500">Gourango roy</span></h1>
+
+                <h2 class="font-bold text-2xl ">I'm a <span class="text-red-500"> Web designer and  Developar</span> </h2>
+
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quis quo impedit beatae provident aperiam. Quo, corrupti voluptates! Est laudantium ipsam, vel aperiam ex, dignissimos nulla omnis delectus, ipsa inventore temporibus minima. Dicta libero excepturi accusantium neque cumque! Quibusdam culpa natus incidunt eius inventore consectetur fuga, beatae eligendi qui iure!</p>
+
+                <div class="icon flex  gap-5">
+
+                    <i class="fa-brands fa-facebook border-2 border-solid border-red-500 p-5 rounded-full text-xl transform hover:scale-110 hover:rotate-6 transition"></i>
+
+                    <i class="fa-brands fa-instagram border-2 border-solid border-red-500 p-5 rounded-full text-xl transform hover:scale-110 hover:rotate-6 transition"></i>
+
+                    <i class="fa-brands fa-square-x-twitter border-2 border-solid border-red-500 p-5 rounded-full text-xl transform hover:scale-110 hover:rotate-6 transition"></i>
+
+                    <i class="fa-regular fa-user border-2 border-solid border-red-500 p-5 rounded-full text-xl transform hover:scale-110 hover:rotate-6 transition"></i>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+</div>
+    
+      
+<!--hero end-->
+
+
+
+<!--SKILLS-->
+
+
+
+<div class=" m-auto w-5/6 font-mono h-40">
+
+
+        <div class="SKILLS  text-white mt-20">
+
+            <div class="  text-center max-w-3/4 m-auto flex flex-col gap-10 ">
+
+                <h1 class="text-6xl text-red-500  font-bold">My Skills !</h1>
+
+                <h3>Here are some front-end , back-end , and other tools and technologies . This technologys know and use in my professional projects. </h3>
+
+            </div>
+
+
+            <!--Front-End technology-->
+
+            <div class="box mt-10 flex flex-col gap-5">
+
+                <div class="content">
+                    <h1 class=" font-bold text-4xl">Front-End technology</h1>
+                </div>
+
+                <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-10 gap-5">
+        
+                    <div class="border-2 border-solid border-red-500 rounded-4xl  ">
+
+                        <img src="./s/html.jpg" class="  animate-bounce w-60 h-60 p-10 my-10" alt="">
+
+                    </div>
+
+                    <div class=" border-2 border-solid border-red-500 rounded-4xl ">
+    
+                        <img src="./s/css-3.png" class="  animate-bounce  w-60 h-60 p-10 my-10" alt="">
+    
+                    </div>
+    
+                    <div class=" border-2 border-solid border-red-500 rounded-4xl">
+    
+                        <img src="./s/js.png" class="  animate-bounce  w-60 h-60 p-10 my-10" alt="">
+    
+                    </div>
+
+                    <div class=" border-2 border-solid border-red-500 rounded-4xl">
+    
+                        <img src="./s/tailwind-css-100.png" class="  animate-bounce  w-60 h-60 p-10 my-10" alt="">
+    
+                    </div>
+
+                    <div class=" border-2 border-solid border-red-500 rounded-4xl">
+    
+                        <img src="./s/bootstrap-logo.png" class="  animate-bounce  w-60 h-60 p-10 my-10" alt="">
+    
+                    </div>
+
+                    <div class=" border-2 border-solid border-red-500 rounded-4xl ">
+    
+                        <img src="./s/_react icon.png" class="  animate-bounce  w-60 h-60 p-10 my-10" alt="">
+    
+                    </div>
+                    
+
+    
+    
+                </div>
+
+            </div>
+
+
+            <!--Front-End technology end-->
+
+
+
+            <!--Back-End technology -->
+
+
+                    <div class="box mt-20 flex flex-col gap-5">
+        
+                        <div class="content">
+                            <h1 class=" font-bold text-4xl">Back-End technology</h1>
+                        </div>
+        
+                        <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-10">
+                
+                            <div class="border-2 border-solid border-red-500 rounded-4xl  ">
+        
+                                <img src="./s/back-end/node-js.png" class="  animate-bounce w-60 h-60 p-10 my-10" alt="">
+        
+                            </div>
+        
+                            <div class=" border-2 border-solid border-red-500 rounded-4xl ">
+            
+                                <img src="./s/back-end/express-js.png" class="  animate-bounce  w-60 h-60 p-10 my-10" alt="">
+            
+                            </div>
+            
+                            <div class=" border-2 border-solid border-red-500 rounded-4xl">
+            
+                                <img src="./s/back-end/mongodb-48.png" class="  animate-bounce  w-60 h-60 p-10 my-10" alt="">
+                             
+                            </div>   
+            
+                          
+                            
+        
+            
+            
+                        </div>
+        
+                    </div>
+
+
+
+            <!--Back-End technology end -->
+
+
+
+
+
+            <!--Others Technology -->
+
+
+            <div class="box mt-20 flex flex-col gap-5">
+        
+                <div class="content">
+                    <h1 class=" font-bold text-4xl">Others Technology</h1>
+                </div>
+
+                <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-10">
+        
+                    <div class="border-2 border-solid border-red-500 rounded-4xl  ">
+
+                        <img src="./s/Others/git-48.png" class="  animate-bounce w-60 h-60 p-10 my-10" alt="">
+
+                    </div>
+
+                    <div class=" border-2 border-solid border-red-500 rounded-4xl ">
+    
+                        <img src="./s/Others/github_icon.png" class="  animate-bounce  w-60 h-60 p-10 my-10" alt="">
+    
+                    </div>
+    
+                    <div class=" border-2 border-solid border-red-500 rounded-4xl">
+    
+                        <img src="./s/Others/figma_logo_icon_147289.png" class="  animate-bounce  w-60 h-60 p-10 my-10" alt="">
+                     
+                    </div>   
+    
+                  
+                    
+
+    
+    
+                </div>
+
+            </div>
+
+
+            <!--Others Technology end -->
+
+
+
+
+
+
+        </div>
+
+</div>
+
+
+
+<!--SKILLS end-->
+
+
+
+
+<!--Education & Courses-->
+
+
+
+<h1 class="text-white">sdfdsfdgfdgdgd</h1>
+<h1 class="text-white">sdfdsfdgfdgdgd</h1>
+
+
+<!--Education & Courses end-->
+
+
+
+
+
+</body>
+</html>
